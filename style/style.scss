@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+$uno: #bed063;
+$dos:#D57E7E;
+$tres:#bee3e3;
+$cuatro:#f6d293;
+
+body{
+    background-color: $tres;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    width: 100vw;
+    .logo{
+        width: 100%;
+        height:10vh ;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background-color: $tres;
+        nav{
+            width: 100%;
+            height: 10vh;
+            background-image: url("./img/logo.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            text-align: center;
+            font-size: 25px;
+            color: $dos;
+            padding: 3vh;
+            font-weight: bolder;
+            
+        }
+    }
+    
+    .section{
+        width: 100%;
+        height: 60vh;
+        background-image: url("https://images.pexels.com/photos/6620948/pexels-photo-6620948.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        div{
+            width: 70%;
+            height: 30%;
+            background-color: rgba(33, 34, 30, 0.4);
+            text-align: center;
+            border-radius: 20px;
+            border: 15px double $uno;
+            padding: 10px;
+            h1{
+                color: white;
+                font-size: 35px;
+                margin-bottom: 10px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+article{
+    width: 100vw;
+
+    .texto{
+        width: 80%;
+        margin: 5vh auto;
+        line-height: 1.5;
+        h2{
+            text-align: center;
+            color: whitesmoke;
+        }
+        h3{
+            text-align: center;
+            color: $cuatro;
+        }
+        p{
+            text-align: justify;
+
+        }
+
+    }
+
+    .servicios{
+        width: 100%;
+        .img{
+            width: 90%;
+            height: 60vh;
+            margin: auto;
+            background-attachment: fixed;
+            background-image: url("https://images.pexels.com/photos/6187837/pexels-photo-6187837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-position: bottom;
+            background-size: cover;
+            border-radius: 15px;
+        }
+        .servicios-texto{
+            width: 80%;
+            margin: auto;
+            line-height: 1.5;
+            h3{
+                font-size: 25px;
+                color: white;
+                text-align: center;
+                margin: 2vh 0;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+        .servicios-titulo{
+            width: 100%;  
+            height: 30vh;  
+            background-color: #252323;
+            padding-top: 5vh;
+            margin-top: 3vh;
+            h2{
+                text-align: center;
+                color: $uno;
+                font-size: 30px;
+                text-shadow: 0 0 5px black;
+            }
+        }
+
+        
+        .servicios-lista{
+            width: 80%;
+            height: 40vh;
+            margin:3vh auto;
+            text-align: center;
+            background-color: whitesmoke;
+            img{
+                width: 100%;
+                height: 70%;
+            }
+
+            @keyframes boton {
+                0%{
+                    stroke-dashoffset:1000 ;
+                }
+                25%{
+                    stroke-dashoffset:600 ;
+                }
+                50%{
+                    stroke-dashoffset:200 ;
+                }                
+            }
+            button{
+                border: none;
+                position: relative;
+                top: -3.5vh;
+                display: inline-block;
+                padding: 15px;
+                font-size: 15px;
+                background-color: $dos;
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                    position: relative;
+                    z-index: 2;
+                }
+                svg{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    rect{
+                        width: 100%;
+                        height: 100%;
+                        stroke:$uno;
+                        stroke-width: 10px;
+                        stroke-dasharray: 1000;
+                        stroke-dashoffset:1000 ;
+                        animation-name: boton;
+                        animation-duration:4s;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
+        }
+        .uno{
+            margin-top: -15vh;
+        }
+    }
+}
