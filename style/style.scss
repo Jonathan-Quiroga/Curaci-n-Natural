@@ -1,4 +1,4 @@
-* {
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -84,7 +84,7 @@ article{
         }
         h3{
             text-align: center;
-            color: $cuatro;
+            color: $dos;
         }
         p{
             text-align: justify;
@@ -140,6 +140,7 @@ article{
             margin:3vh auto;
             text-align: center;
             background-color: whitesmoke;
+            position: relative;
             img{
                 width: 100%;
                 height: 70%;
@@ -165,11 +166,10 @@ article{
                 font-size: 15px;
                 background-color: $dos;
 
-                a{
+                h3{
                     color: white;
                     text-decoration: none;
-                    position: relative;
-                    z-index: 2;
+                    
                 }
                 svg{
                     width: 100%;
@@ -190,9 +190,53 @@ article{
                     }
                 }
             }
+            .info{
+                display: none;
+            }
+            .visible{
+                width: 100%;
+                height: 100%;
+                background-color: #bed063;
+                position: absolute;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                i{
+                    color: red;
+                    font-size: 35px;
+                    text-align: left;
+                    margin: 5px;
+                }
+            }            
         }
         .uno{
             margin-top: -15vh;
+        }
+    }
+
+    .contacto{
+        padding: 2vh 0;
+        .contacto_img{
+            width: 100vw;
+            height: 40vh;
+            background-image: url("https://images.pexels.com/photos/6932084/pexels-photo-6932084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            margin-bottom: 5vh;
+        }   
+        .contacto_agendar{
+            width: 80%;
+            margin: 0 auto 3vh;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        .redes{
+            h3{
+                color: $dos;
+                text-align: center;
+                font-size: 35px;
+            }
         }
     }
 }
