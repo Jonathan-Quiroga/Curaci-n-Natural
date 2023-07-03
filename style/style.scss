@@ -27,15 +27,35 @@ header{
         nav{
             width: 100%;
             height: 10vh;
-            background-image: url("./img/logo.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
             text-align: center;
             font-size: 25px;
             color: $dos;
-            padding: 3vh;
             font-weight: bolder;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                height: 50%;
+                object-fit: cover;
+                position: absolute;
+                left: 18vw;
+                top: .5vh;
+            }
+            #img_dos{
+                height: 50%;
+                object-fit: cover;
+                position: absolute;
+                top: .5vh;
+                left: 72vw;
+            }
+           
+            
+            h1{
+                text-align: center;
+                span{
+                    color: rgb(49, 149, 6);
+                }
+            }
             
         }
     }
@@ -78,13 +98,11 @@ article{
         width: 80%;
         margin: 5vh auto;
         line-height: 1.5;
-        h2{
-            text-align: center;
-            color: whitesmoke;
-        }
         h3{
             text-align: center;
             color: $dos;
+            font-size: 20px;
+            margin-bottom: 1vh;
         }
         p{
             text-align: justify;
@@ -99,7 +117,6 @@ article{
             width: 90%;
             height: 60vh;
             margin: auto;
-            background-attachment: fixed;
             background-image: url("https://images.pexels.com/photos/6187837/pexels-photo-6187837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
             background-position: bottom;
             background-size: cover;
@@ -136,7 +153,7 @@ article{
         
         .servicios-lista{
             width: 80%;
-            height: 47vh;
+            height: 50vh;
             margin:3vh auto;
             text-align: center;
             background-color: whitesmoke;
@@ -148,7 +165,7 @@ article{
             p{
                 font-size: 15px;
                 width: 90%;
-                margin: -1.5vh auto 0;
+                margin: -2vh auto 0;
             }
 
             @keyframes boton {
@@ -236,7 +253,6 @@ article{
             height: 40vh;
             background-image: url("https://images.pexels.com/photos/6932084/pexels-photo-6932084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
             background-size: cover;
-            background-attachment: fixed;
             background-position: center;
             margin-bottom: 5vh;
         }   
