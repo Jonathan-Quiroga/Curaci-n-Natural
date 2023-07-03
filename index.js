@@ -62,3 +62,17 @@ cerrar5.addEventListener("click", ()=>{
     serviciosInformacion5.classList.remove("visible")
 
 })
+
+
+//Formulario
+const enviar = document.getElementById('enviar');
+const enviarFormulario = (event)=>{
+    event.preventDefault();
+        let nombre = document.getElementById('nombre').value;
+        let apellido = document.getElementById('apellido').value;
+        let mensaje = document.getElementById('mensaje').value;
+        let numero = 7294923316;
+    var win= window.open(`https://wa.me/${numero}? text=Hola mi nombre es ${nombre} ${apellido}, Asunto: ${mensaje} `, '_blank');
+}
+
+enviar.addEventListener('click', enviarFormulario);

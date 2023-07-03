@@ -124,7 +124,7 @@ article .servicios .servicios-titulo h2 {
 }
 article .servicios .servicios-lista {
   width: 80%;
-  height: 40vh;
+  height: 47vh;
   margin: 3vh auto;
   text-align: center;
   background-color: whitesmoke;
@@ -133,6 +133,11 @@ article .servicios .servicios-lista {
 article .servicios .servicios-lista img {
   width: 100%;
   height: 70%;
+}
+article .servicios .servicios-lista p {
+  font-size: 15px;
+  width: 90%;
+  margin: -1.5vh auto 0;
 }
 @keyframes boton {
   0% {
@@ -187,12 +192,21 @@ article .servicios .servicios-lista .visible {
   top: 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+article .servicios .servicios-lista .visible .info_tipo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: justify;
+  height: 90%;
 }
 article .servicios .servicios-lista .visible i {
   color: red;
   font-size: 35px;
   text-align: left;
   margin: 5px;
+  transition: 2s;
 }
 article .servicios .uno {
   margin-top: -15vh;
@@ -215,8 +229,64 @@ article .contacto .contacto_agendar {
   text-align: justify;
   line-height: 1.5;
 }
-article .contacto .redes h3 {
+article .contacto .formulario h3 {
   color: #D57E7E;
   text-align: center;
   font-size: 35px;
+  margin-bottom: 3vh;
+}
+article .contacto .formulario form {
+  display: flex;
+  flex-direction: column;
+}
+article .contacto .formulario form input {
+  display: block;
+  width: 70%;
+  margin: 1vh auto;
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  border-bottom: #D57E7E 3px solid;
+  font-size: 20px;
+  padding: 5px;
+}
+article .contacto .formulario form input:focus {
+  color: black;
+  outline: none;
+  border-bottom: yellow solid 3px;
+}
+article .contacto .formulario form input::-moz-placeholder {
+  color: rgb(231, 135, 8);
+}
+article .contacto .formulario form input::placeholder {
+  color: rgb(231, 135, 8);
+}
+article .contacto .formulario form textarea {
+  background-color: transparent;
+  width: 70%;
+  border: none;
+  border-bottom: #D57E7E 3px solid;
+  margin: 3vh auto;
+  height: 8vh;
+  font-size: 20px;
+  text-align: center;
+}
+article .contacto .formulario form textarea::-moz-placeholder {
+  color: rgb(231, 135, 8);
+}
+article .contacto .formulario form textarea::placeholder {
+  color: rgb(231, 135, 8);
+}
+article .contacto .formulario form textarea:focus {
+  color: black;
+  outline: none;
+  border-bottom: yellow solid 3px;
+}
+article .contacto .formulario form button {
+  width: 25vw;
+  margin: 1vh auto;
+  background-color: #D57E7E;
+  color: white;
+  border: none;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
