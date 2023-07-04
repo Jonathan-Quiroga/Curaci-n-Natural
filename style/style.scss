@@ -292,24 +292,26 @@ article{
                     }
                     
                 }
-
-                textarea{
-                    background-color: transparent;
-                    width: 70%;
-                    border: none;
-                    border-bottom: #D57E7E 3px solid ;
-                    margin: 3vh auto;
-                    height: 8vh;
+                label{
+                    margin: 1vh auto;
+                    color: rgb(231, 135, 8);
                     font-size: 20px;
-                    text-align: center;
-                    &::placeholder{
-                        color: rgb(231, 135, 8);
+                    font-weight: bold;
+                }
+                #listaServicios{
+                    margin: auto;
+                    width: 70%;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom:#D57E7E 3px solid ;
+                    color: rgb(231, 135, 8);
+                    font-size: 25px;
+                    option{
+                        text-align: center;
+                        font-size: 15px;
                     }
-                    &:focus{
-                        color: black;
-                        outline: none;
-                        border-bottom: yellow solid 3px;  
-                    }
+                    
+                    
                 }
                 button{
                     width: 25vw;

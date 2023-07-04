@@ -277,26 +277,24 @@ article .contacto .formulario form input::-moz-placeholder {
 article .contacto .formulario form input::placeholder {
   color: rgb(231, 135, 8);
 }
-article .contacto .formulario form textarea {
-  background-color: transparent;
+article .contacto .formulario form label {
+  margin: 1vh auto;
+  color: rgb(231, 135, 8);
+  font-size: 20px;
+  font-weight: bold;
+}
+article .contacto .formulario form #listaServicios {
+  margin: auto;
   width: 70%;
+  background-color: transparent;
   border: none;
   border-bottom: #D57E7E 3px solid;
-  margin: 3vh auto;
-  height: 8vh;
-  font-size: 20px;
+  color: rgb(231, 135, 8);
+  font-size: 25px;
+}
+article .contacto .formulario form #listaServicios option {
   text-align: center;
-}
-article .contacto .formulario form textarea::-moz-placeholder {
-  color: rgb(231, 135, 8);
-}
-article .contacto .formulario form textarea::placeholder {
-  color: rgb(231, 135, 8);
-}
-article .contacto .formulario form textarea:focus {
-  color: black;
-  outline: none;
-  border-bottom: yellow solid 3px;
+  font-size: 15px;
 }
 article .contacto .formulario form button {
   width: 25vw;

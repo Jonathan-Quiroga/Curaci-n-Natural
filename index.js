@@ -70,9 +70,10 @@ const enviarFormulario = (event)=>{
     event.preventDefault();
         let nombre = document.getElementById('nombre').value;
         let apellido = document.getElementById('apellido').value;
-        let mensaje = document.getElementById('mensaje').value;
-        let numero = 7294923316;
-    var win= window.open(`https://wa.me/${numero}? text=Hola mi nombre es ${nombre} ${apellido}, Asunto: ${mensaje} `, '_blank');
+        let mensaje = document.getElementById('listaServicios').value;
+    var win= window.open(`https://api.whatsapp.com/send/?phone=7292273543&text=Hola mi nombre es: ${nombre} ${apellido}%0AMe gustaria mayor informacion de: ${mensaje} `, '_blank');
 }
 
 enviar.addEventListener('click', enviarFormulario);
+
+
